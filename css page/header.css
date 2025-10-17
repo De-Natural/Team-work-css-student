@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: gray;
+}
+nav{
+    padding: 0 40px;
+    height: 80px;
+    width: 100%;
+    background-color: white;
+    font-family: monospace;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    font-size: 50px;
+    color: blue;
+}
+ul{
+    list-style: none;
+    display: flex;
+    gap: 40px;
+}
+ul>li>a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+nav a:hover{
+    background-color: gray;
+}
+.btn{
+    background-color: black;
+    padding: 10px 35px;
+    color: white;
+    border-radius: 5px;
+}
+.btn2{
+    background-color: black;
+    padding: 10px 35px;
+    color: white;
+    border-radius: 5px;
+}
+.menu{
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
+}
+.side-bar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding-top: 15px;
+    height: 100vh;
+    width: 250px;
+    background-color: white;
+    backdrop-filter: blur(10px);
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    display: none;
+}
+.side-bar>:nth-child(1){
+    font-size: 30px;
+    cursor: pointer;
+}
+.side-bar li {
+    width: 100%;
+}
+.side-bar li a{
+    padding: 15px;
+    width: 200px;
+}
+@media screen and (max-width: 950px){
+    .menu{
+        display: block;
+    }
+    ul{
+        display: none;
+    }
+    .btn{
+        display: none;
+    }
+    .btn2{
+        font-size: 20px;
+    }
+    .side-bar{
+        display: flex;
+        align-items: center;
+    }
+}
