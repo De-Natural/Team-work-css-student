@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Header</title>
+    <link rel="stylesheet" href="/css page/header.css">
+    <link rel="stylesheet" href="/css page/download.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <nav>
+        <label for="Logo" class="logo"><img src="/Media/logo.png" alt=""></label>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of use</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#"></a></li>
+        </ul>
+        <button class="btn">Download</button>
+        <label for="" class="menu" onclick="Showside()">
+        <i class="fa-solid fa-bars"></i>
+        </label>
+
+        <ul class="side-bar">
+            <i class="fa-solid fa-xmark" onclick="hide()"></i>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of use</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <button class="btn2">Download</button>
+        </ul>
+    </nav>
+    <div class="Download_container">
+        <p class="no1">How to Download The App</p>
+        <p>Steps to download 9app</p>
+        <section class="download_box">
+            <div class="S1">
+                <article><span>1</span></article>
+                <main>
+                <img src="/Media/Playstore 1.png" alt="">
+                <p>Open and Search on Google Play</p>
+                </main>
+            </div>
+
+            <div class="S2">
+                <main>
+                    <img src="/Media/Playstore 2.png" alt="">
+                    <p>Click on Install and download</p>
+                </main>
+                <article><span>2</span></article>
+            </div>
+
+            <div class="S3">
+                <img src="/Media/Playstore download.png" alt="Playstore">
+            </div>
+
+            <div class="S4">
+                <img src="/Media/Appstore download.png" alt="">
+            </div>
+
+            <div class="S5">
+                <article><span>1</span></article>
+                <main>
+                    <img src="/Media/Appstore 1.png" alt="">
+                    <p>Open and Search on Apple Store</p>
+                </main>
+            </div>
+
+            <div class="S6">
+                <main>
+                    <img src="/Media/Appstore 2.png" alt="">
+                    <p>Click on Get and download</p>
+                </main>
+                <article><span>2</span></article>
+            </div>
+
+        </section>
+    </div>
+
+    <script>
+        function Showside(){
+            document.querySelector('.side-bar').style.display = 'flex';
+        }
+
+        function hide(){
+            document.querySelector('.side-bar').style.display = 'none';
+        }
+    </script>
+</body>
+</html>
