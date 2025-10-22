@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Landing Page</title>
+</head>
+<body>
+    <header>
+        <nav>
+        <label for="Logo" class="logo"><img src="/Media/logo.png" alt=""></label>
+        <ul>
+            <li><a href="#" id="home">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of use</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#"></a></li>
+        </ul>
+        <button class="btn">Download</button>
+        <label for="" class="menu" onclick="Showside()">
+        <i class="fa-solid fa-bars"></i>
+        </label>
+
+        <ul class="side-bar">
+            <i class="fa-solid fa-xmark" onclick="hide()"></i>
+            <li><a href="#" id="home">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of use</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <button class="btn2">Download</button>
+        </ul>
+    </nav>
+    <script>
+        function Showside(){
+            document.querySelector('.side-bar').style.display = 'flex';
+        }
+
+        function hide(){
+            document.querySelector('.side-bar').style.display = 'none';
+        }
+    </script>
+    </header>
+
+    <div class="background"></div>
+    <main>
+        <div>
+            <div class="dive">
+            <h2>Dive into the <span>future of finance</span> with our cutting-edge coin exchange & <br>local bank withdrawal platform</h2>
+            <p>Download 9app from your favorite store, and enjoy the whole experience of seamless transaction. <br>A platform where innovation meets security. </p> 
+            </div>
+
+            <div class="section">
+            <div class="app">
+        <div>
+            <img src="/images/google_play.png" alt="playstore">
+        </div>
+        
+        <div class="playstore">
+           <p class="get"> Get it on</p>
+           <p id="store">Google Play Store</p>
+        </div>
+        </div>
+
+        <div class="apple">
+            <div>
+                <img src="/images/apple.png" alt="apple">
+            </div>
+
+            <div class="download">
+                <p class="the">Download on the</p>
+                <p class="second">Apple Store</p>
+            </div>
+        </div>
+    </div>
+    </div>
+
+        <div class="phone">
+            <img src="/images/Group 1000004721.png" alt="phone">
+        </div>
+    </main>
+</body>
+</html>
